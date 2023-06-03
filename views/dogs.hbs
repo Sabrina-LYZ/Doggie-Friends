@@ -1,0 +1,24 @@
+
+<div class="d-flex ">
+
+<a href="/add"><button type="button" class="btn btn-sm my-me-3 ms-4 btn-custom"> Add Your Dogs!</button></a>
+</div>
+
+<div class="row d-flex justify-content-between">
+    {{#each dogs}}
+        <div class="card dog-card col-md-4 my-4">
+            {{#if dogImagePath}} 
+             <img src="{{dogImagePath}}" class="card-img-top dog-img" alt="dog image">
+            {{/if}}
+           
+            <div class="card-body">
+                <h5 class="card-title">{{dogName}}</h5>
+                <p class="card-text">Breed: {{dogBreed}}</p>
+                <p class="card-text">Age: {{dogAge}}</p>
+                <p class="card-text">Gender: {{dogGender}}</p>
+                <a href="/dog/{{slug}}"><button type="button" class="btn btn-sm btn-outline-secondary view-dog">View</button></a>         
+            </div>
+        </div>
+    {{/each}}
+
+</div>

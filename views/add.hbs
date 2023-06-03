@@ -1,0 +1,28 @@
+<section id="add-dog">
+     {{#if message}} 
+        <div class="error">
+          <p class='d-flex  justify-content-center p-3 mb-2 bg-warning text-dark'>{{message}}</p>
+        </div>
+    {{/if}}
+    <div id ='add-dog-prompt'>
+            <p>NAME:</p>
+            <p>BREED:</p>
+            <p>AGE:</p>
+            <p>GENDER:</p>
+            <p>SKILLS:</p>
+            <p>INTRODUCTION:</p>
+    </div>
+    <form id='add' action="/add" method="POST">
+        <div id="form-add">
+            <input type="text" name="dogName">
+            <input type="text" name="dogBreed">
+            <input type="text" name="dogAge">
+            <input type="text" name="dogGender">
+            <input type="text" name="dogSkills">
+            <textarea name="dogIntro" cols="80" rows="5" placeholder="Introduce your dog:"></textarea>
+            <input type="file" name="cover" class="filepond">
+            <input class="btn btn-lg mt-3 btn-custom" type="submit" value="Add">
+        </div>
+        
+    </form>
+</section>

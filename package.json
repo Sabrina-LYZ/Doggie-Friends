@@ -1,0 +1,37 @@
+{
+  "name": "final-project-sabrina-lyz",
+  "version": "1.0.0",
+  "description": "Doggie Friend Web App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-spring-2023/final-project-Sabrina-LYZ.git"
+  },
+  "author": "Sabrina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/final-project-Sabrina-LYZ/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/final-project-Sabrina-LYZ#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^7.0.3",
+    "mongoose-findorcreate": "^4.0.0",
+    "mongoose-slug-updater": "^3.3.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

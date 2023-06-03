@@ -1,0 +1,29 @@
+<section id="login" class="text-center col-lg-4 col-md-6 mx-auto">
+    <form method="POST">
+        <h1 class="h3 mt-5 mb-4 login-sentence">Login</h1>
+        <p>Not Registered? <a href="/signup" class="text-decoration-none">Sign up</a></p>
+        {{#if message}} 
+        <div class="error">
+          <p class='d-flex justify-content-center p-3 mb-2 bg-warning text-dark'>{{message}}</p>
+        </div>
+        {{/if}}
+
+        <div class="form-floating mb-3">
+        <input type="text" class="form-control" name="username" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Username</label>
+        </div>
+
+        <div class="form-floating mb-3">
+        <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+        </div>
+
+        <button type="submit" value="Login" class="btn btn-lg my-3 me-3 btn-custom w-100"> Login</button>
+        <div class="card social-block">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Login with Google
+          </a> 
+        </div>
+    </form>
+</section>

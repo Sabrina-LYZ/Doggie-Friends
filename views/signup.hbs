@@ -1,0 +1,37 @@
+<section id="signup" class="text-center col-lg-4 col-md-6 mx-auto">
+    <form method="POST" action="/signup">
+        <h1 class="h3 mt-5 mb-4 login-sentence">Create New Account</h1>
+        <p>Already Registered? <a href="/login" class="text-decoration-none">Login</a></p>
+        
+        {{#if message}} 
+        <div class="error">
+              <p class='d-flex justify-content-center p-3 mb-2 bg-warning text-dark'>{{message}}</p>
+        </div>
+        {{/if}}
+
+        <div class="form-floating mb-3">
+        <input type="text" class="form-control" name='username' id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Username</label>
+        </div>
+
+        <div class="form-floating mb-3">
+        <input type="email" class="form-control" name='email' id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+        </div>
+
+        <div class="form-floating mb-3">
+        <input type="password" class="form-control" name='password' id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+        </div>
+
+        <input type="submit" value='Sign up' class="btn btn-lg my-3 me-3 btn-custom w-100"></button>
+        
+        <div class="card social-block">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign Up with Google
+          </a> 
+        </div>
+
+    </form>
+</section>
